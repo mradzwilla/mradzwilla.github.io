@@ -1,0 +1,72 @@
+#intro {
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: black;
+	border-style: solid;
+	border-color: #e60073;
+	z-index: 1;
+}
+body {
+	background-color: black;
+	font-family: 'Poiret One', cursive;
+}
+#intro p{
+	color: white;
+	font-size: 50px;
+	text-align: center;
+	margin-top: 200px;
+}
+
+.jukebox {
+	height: 100px;
+	width: 100px;
+	background-color: #e6e600;
+	border: solid 1px #1f1f14;
+	padding: 20px;
+	margin: 35px;
+	float: left;
+	border-radius: 10px;
+	box-shadow: 4px 8px 55px #e60073;
+	background: linear-gradient(#ff6600, #e6e600);
+}
+
+.jukeboxes_container {
+	margin-top: 20px;
+	margin-left: 25px;
+}
+#create {
+	margin-top: 15px;
+	clear: both;
+	text-align: center;
+}
+
+.on {
+	background: linear-gradient(#33ff33, #e6e600);
+}
+
+button {
+	padding: 18px;
+	padding-left: 55px;
+	padding-right: 55px;
+	font-size: 20px;
+	border-radius: 10px;
+	border-style: none;
+	background-color: linear-gradient(#e60073, #e6e600);
+	font-family: 'Poiret One', cursive;
+	background: linear-gradient(black, #e60073, black);
+	font-weight: bold;
+}
+#screen{
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: black;
+	border: solid #e60073 .8px;
+	border-bottom-style: none;
+	z-index: -1;
+}
