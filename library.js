@@ -11,9 +11,8 @@ var jukeArray = []
 
 introSong.play();
 
-function Jukebox(name){
+function Jukebox(){
 	this.id = jukeCount
-	this.boxName = name
 	this.globalPlay = false
 
 	var boxSong = new Audio("public/music/" + music_library[Math.floor(Math.random()*(music_library.length))] +".mp3")
@@ -55,7 +54,7 @@ $("#intro").click(function(){
 
 
 $("#NewJukebox").click(function(){
-	$(".jukeboxes_container").append("<div class='jukebox' id='" + jukeCount + "'>" + name + "</div>")
+	$(".jukeboxes_container").append("<div class='jukebox' id='" + jukeCount + "'></div>")
 	var jukeID = jukeCount
 	jukeArray.push(jukeID = new Jukebox())
 	jukeCount++
@@ -90,7 +89,5 @@ $('.jukeboxes_container').on("mouseleave", '.jukebox' , function(event) {
 	jukeArray[i].pauseSong();
 	}
 }); 
-
-
 
 }) //Closes .ready
